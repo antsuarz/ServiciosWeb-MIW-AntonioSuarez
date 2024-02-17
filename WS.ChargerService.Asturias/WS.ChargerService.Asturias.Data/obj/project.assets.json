@@ -9776,11 +9776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Antonio\\Desktop\\ServiciosWeb\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\WS.ChargerService.Asturias.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Antonio\\ServiciosWeb-MIW-AntonioSuarez\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\WS.ChargerService.Asturias.Data.csproj",
       "projectName": "WS.ChargerService.Asturias.Data",
-      "projectPath": "C:\\Users\\Antonio\\Desktop\\ServiciosWeb\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\WS.ChargerService.Asturias.Data.csproj",
+      "projectPath": "C:\\Users\\Antonio\\ServiciosWeb-MIW-AntonioSuarez\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\WS.ChargerService.Asturias.Data.csproj",
       "packagesPath": "C:\\Users\\Antonio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Antonio\\Desktop\\ServiciosWeb\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\obj\\",
+      "outputPath": "C:\\Users\\Antonio\\ServiciosWeb-MIW-AntonioSuarez\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Antonio\\AppData\\Roaming\\NuGet\\NuGet.Config",

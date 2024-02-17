@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Qf9g58S0vTEF/qabLqJsuqF5apWhbEL4NtLO6T7tgbRlpf8iEmTTojtA0J95pueBOMI2YFJAFtbtO0k3iTTCg==",
+  "dgSpecHash": "Fb21a98bV7YPbNqOclSr0klDmquHai8eD5vQ6QFV44pQ/0sxVP5c0egNN80Rnd08ZdxL2EzR8J5EeVW6jzJg4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antonio\\Desktop\\ServiciosWeb\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Application\\WS.ChargerService.Asturias.Application.csproj",
+  "projectFilePath": "C:\\Users\\Antonio\\ServiciosWeb-MIW-AntonioSuarez\\WS.ChargerService.Asturias\\WS.ChargerService.Asturias.Application\\WS.ChargerService.Asturias.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antonio\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
