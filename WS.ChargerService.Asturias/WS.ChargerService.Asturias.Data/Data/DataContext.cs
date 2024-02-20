@@ -8,7 +8,7 @@ namespace WS.ChargerService.Asturias.Data.Data
 		protected override void OnConfiguring(DbContextOptionsBuilder
 		optionsBuilder)
 		{
-			optionsBuilder.UseSqlite("Data Source=data/database.db");
+			optionsBuilder.UseSqlite("Data Source=database.db");
 		}
 		public DbSet<Cargador> Cargadores { get; set; }
 	}
