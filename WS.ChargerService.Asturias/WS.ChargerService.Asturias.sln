@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.ChargerService.Asturias.Data", "WS.ChargerService.Asturias.Data\WS.ChargerService.Asturias.Data.csproj", "{293AE272-E8FF-4379-A06B-D0845F55234D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.ChargerService.Asturias.Data", "WS.ChargerService.Asturias.Data\WS.ChargerService.Asturias.Data.csproj", "{293AE272-E8FF-4379-A06B-D0845F55234D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.ChargerService.Asturias.Application", "WS.ChargerService.Asturias.Application\WS.ChargerService.Asturias.Application.csproj", "{B0A0B9B1-26E6-4819-837E-F4F0F19650A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.ChargerService.Asturias.Application", "WS.ChargerService.Asturias.Application\WS.ChargerService.Asturias.Application.csproj", "{B0A0B9B1-26E6-4819-837E-F4F0F19650A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.ChargerService.Asturias.Consola", "WS.ChargerService.Asturias.Consola\WS.ChargerService.Asturias.Consola.csproj", "{BCFB9BC9-3454-4C0B-8DB3-D33804EDC9CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B0A0B9B1-26E6-4819-837E-F4F0F19650A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A0B9B1-26E6-4819-837E-F4F0F19650A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0A0B9B1-26E6-4819-837E-F4F0F19650A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFB9BC9-3454-4C0B-8DB3-D33804EDC9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFB9BC9-3454-4C0B-8DB3-D33804EDC9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFB9BC9-3454-4C0B-8DB3-D33804EDC9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFB9BC9-3454-4C0B-8DB3-D33804EDC9CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
