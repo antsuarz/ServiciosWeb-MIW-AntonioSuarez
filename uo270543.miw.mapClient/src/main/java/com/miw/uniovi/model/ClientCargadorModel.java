@@ -1,6 +1,6 @@
 package com.miw.uniovi.model;
 
-public class CargadorModel {
+public class ClientCargadorModel {
 
     public String title;
 
@@ -14,7 +14,7 @@ public class CargadorModel {
         return title;
     }
 
-    public CargadorModel(String title, double corX, double corY, String tipo) {
+    public ClientCargadorModel(String title, double corX, double corY, String tipo) {
         this.title = title;
         this.corX = corX;
         this.corY = corY;
