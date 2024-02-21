@@ -10,15 +10,15 @@ public class ClientCargadorModel {
 
     public String tipo;
 
-    public String getTitle() {
-        return title;
-    }
 
     public ClientCargadorModel(String title, double corX, double corY, String tipo) {
         this.title = title;
         this.corX = corX;
         this.corY = corY;
         this.tipo = tipo;
+    }
+    public String getTitle() {
+        return title;
     }
 
     public void setTitle(String title) {

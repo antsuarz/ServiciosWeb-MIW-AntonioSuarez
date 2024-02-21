@@ -4,7 +4,7 @@ import com.miw.uniovi.model.ClientCargadorModel;
 
 public class AsturiasConverter {
 
-     ClientCargadorModel fromAsturiasModel(CargadorModel asturiasModel){
+     public static ClientCargadorModel fromAsturiasModel(CargadorModel asturiasModel){
          String title = asturiasModel.getTitle().getValue();
          String tipo = asturiasModel.getTipo().getValue();
          double cordX = Double.parseDouble(asturiasModel.getCordX().getValue());
