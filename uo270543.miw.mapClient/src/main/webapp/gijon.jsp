@@ -9,46 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Puntos de Carga: Gijón</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: lightblue;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-
-    nav {
-      background-color: #333;
-      color: white;
-      padding: 1em;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    #map {
-      height: 60vh;
-      width: 80vw;
-      margin: 0 auto;
-      display: block;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos/asturias.css" />
 </head>
 <body>
 
@@ -81,11 +42,12 @@
             .openPopup();
   });
 
-  gijon.setView([43.359833, -5.852479], 12);
+  gijon.setView([43.537385, -5.660194], 12);
 </script>
 
 <footer>
-  <p>&copy; 2024 Puntos de Carga</p>
+  <p>Master en Ingeniería Web - Servicios Web 2024</p>
+  <p>Antonio Suárez Crespo - UO270543</p>
 </footer>
 
 </body>

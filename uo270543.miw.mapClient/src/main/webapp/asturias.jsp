@@ -19,7 +19,7 @@
 
 <nav>
     <!-- Agrega tus elementos de navegación aquí -->
-    <a href="#">Atrás</a>
+    <a href="#">Inicio</a>
     <a href="${pageContext.request.contextPath}/oviedo">Oviedo</a>
     <a href="${pageContext.request.contextPath}/gijon">Gijón</a>
 </nav>
@@ -47,7 +47,8 @@
 </script>
 
 <footer>
-    <p>&copy; 2024 Puntos de Carga</p>
+    <p>Master en Ingeniería Web - Servicios Web 2024</p>
+    <p>Antonio Suárez Crespo - UO270543</p>
 </footer>
 
 </body>
