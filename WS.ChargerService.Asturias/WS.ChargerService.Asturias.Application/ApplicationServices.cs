@@ -1,5 +1,5 @@
-﻿using WS.ChargerService.Asturias.Application.Model;
-using WSClient.Data;
+﻿using WS.ChargerService.Asturias.Application.Model; 
+using WSClient.Data.Docker;
 
 namespace WS.ChargerService.Asturias.Application
 {

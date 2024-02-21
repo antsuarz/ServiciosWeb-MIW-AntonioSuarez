@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WS.ChargerService.Asturias.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+399d5e609fa235cd1579a570710ee690487d3f53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a955fc5ac5e7e9111f3d417f537521d7e90093b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WS.ChargerService.Asturias.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WS.ChargerService.Asturias.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

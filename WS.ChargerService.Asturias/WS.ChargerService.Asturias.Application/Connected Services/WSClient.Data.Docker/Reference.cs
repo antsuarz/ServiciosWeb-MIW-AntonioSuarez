@@ -7,17 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppAsturiasServices
+namespace WSClient.Data.Docker
 {
     using System.Runtime.Serialization;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CargadorModel", Namespace="http://schemas.datacontract.org/2004/07/WS.ChargerService.Asturias.Application.Mo" +
-        "del")]
-    public partial class CargadorModel : object
+    [System.Runtime.Serialization.DataContractAttribute(Name="Cargador", Namespace="http://schemas.datacontract.org/2004/07/WS.ChargerService.Asturias.Data.Model")]
+    public partial class Cargador : object
     {
+        
+        private int IdField;
         
         private string TipoField;
         
@@ -26,6 +27,19 @@ namespace AppAsturiasServices
         private string cordXField;
         
         private string cordYField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Tipo
@@ -81,23 +95,22 @@ namespace AppAsturiasServices
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.chargerservice.asturias/application/", ConfigurationName="AppAsturiasServices.IApplicationServices")]
-    public interface IApplicationServices
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.chargerservice.asturias/data/", ConfigurationName="WSClient.Data.Docker.IDataServices")]
+    public interface IDataServices
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.chargerservice.asturias/application/IApplicationServices/GetCargadores", ReplyAction="http://ws.chargerservice.asturias/application/IApplicationServices/GetCargadoresR" +
-            "esponse")]
-        System.Threading.Tasks.Task<AppAsturiasServices.CargadorModel[]> GetCargadoresAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.chargerservice.asturias/data/IDataServices/GetCargadores", ReplyAction="http://ws.chargerservice.asturias/data/IDataServices/GetCargadoresResponse")]
+        System.Threading.Tasks.Task<WSClient.Data.Docker.Cargador[]> GetCargadoresAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface IApplicationServicesChannel : AppAsturiasServices.IApplicationServices, System.ServiceModel.IClientChannel
+    public interface IDataServicesChannel : WSClient.Data.Docker.IDataServices, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class ApplicationServicesClient : System.ServiceModel.ClientBase<AppAsturiasServices.IApplicationServices>, AppAsturiasServices.IApplicationServices
+    public partial class DataServicesClient : System.ServiceModel.ClientBase<WSClient.Data.Docker.IDataServices>, WSClient.Data.Docker.IDataServices
     {
         
         /// <summary>
@@ -107,40 +120,40 @@ namespace AppAsturiasServices
         /// <param name="clientCredentials">Credenciales de cliente</param>
         static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
-        public ApplicationServicesClient() : 
-                base(ApplicationServicesClient.GetDefaultBinding(), ApplicationServicesClient.GetDefaultEndpointAddress())
+        public DataServicesClient() : 
+                base(DataServicesClient.GetDefaultBinding(), DataServicesClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_IApplicationServices.ToString();
+            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_IDataServices.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public ApplicationServicesClient(EndpointConfiguration endpointConfiguration) : 
-                base(ApplicationServicesClient.GetBindingForEndpoint(endpointConfiguration), ApplicationServicesClient.GetEndpointAddress(endpointConfiguration))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public ApplicationServicesClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(ApplicationServicesClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+        public DataServicesClient(EndpointConfiguration endpointConfiguration) : 
+                base(DataServicesClient.GetBindingForEndpoint(endpointConfiguration), DataServicesClient.GetEndpointAddress(endpointConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public ApplicationServicesClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(ApplicationServicesClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        public DataServicesClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
+                base(DataServicesClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public ApplicationServicesClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DataServicesClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(DataServicesClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public DataServicesClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress)
         {
         }
         
-        public System.Threading.Tasks.Task<AppAsturiasServices.CargadorModel[]> GetCargadoresAsync()
+        public System.Threading.Tasks.Task<WSClient.Data.Docker.Cargador[]> GetCargadoresAsync()
         {
             return base.Channel.GetCargadoresAsync();
         }
@@ -152,7 +165,7 @@ namespace AppAsturiasServices
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IApplicationServices))
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IDataServices))
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
                 result.MaxBufferSize = int.MaxValue;
@@ -166,27 +179,27 @@ namespace AppAsturiasServices
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IApplicationServices))
+            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IDataServices))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:9091/ApplicationServices.svc");
+                return new System.ServiceModel.EndpointAddress("http://156.35.98.159:9090/DataServices.svc");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }
         
         private static System.ServiceModel.Channels.Binding GetDefaultBinding()
         {
-            return ApplicationServicesClient.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_IApplicationServices);
+            return DataServicesClient.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_IDataServices);
         }
         
         private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
         {
-            return ApplicationServicesClient.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_IApplicationServices);
+            return DataServicesClient.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_IDataServices);
         }
         
         public enum EndpointConfiguration
         {
             
-            BasicHttpBinding_IApplicationServices,
+            BasicHttpBinding_IDataServices,
         }
     }
 }

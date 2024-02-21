@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WSClient.Data
+namespace DataServices
 {
     using System.Runtime.Serialization;
     
@@ -95,22 +95,22 @@ namespace WSClient.Data
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.chargerservice.asturias/data/", ConfigurationName="WSClient.Data.IDataServices")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.chargerservice.asturias/data/", ConfigurationName="DataServices.IDataServices")]
     public interface IDataServices
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.chargerservice.asturias/data/IDataServices/GetCargadores", ReplyAction="http://ws.chargerservice.asturias/data/IDataServices/GetCargadoresResponse")]
-        System.Threading.Tasks.Task<WSClient.Data.Cargador[]> GetCargadoresAsync();
+        System.Threading.Tasks.Task<DataServices.Cargador[]> GetCargadoresAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface IDataServicesChannel : WSClient.Data.IDataServices, System.ServiceModel.IClientChannel
+    public interface IDataServicesChannel : DataServices.IDataServices, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class DataServicesClient : System.ServiceModel.ClientBase<WSClient.Data.IDataServices>, WSClient.Data.IDataServices
+    public partial class DataServicesClient : System.ServiceModel.ClientBase<DataServices.IDataServices>, DataServices.IDataServices
     {
         
         /// <summary>
@@ -153,7 +153,7 @@ namespace WSClient.Data
         {
         }
         
-        public System.Threading.Tasks.Task<WSClient.Data.Cargador[]> GetCargadoresAsync()
+        public System.Threading.Tasks.Task<DataServices.Cargador[]> GetCargadoresAsync()
         {
             return base.Channel.GetCargadoresAsync();
         }
@@ -181,7 +181,7 @@ namespace WSClient.Data
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IDataServices))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:9090/DataServices.svc");
+                return new System.ServiceModel.EndpointAddress("http://156.35.98.159:9090/DataServices.svc");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }

@@ -1,14 +1,14 @@
 {
   "ExtendedData": {
     "inputs": [
-      "http://localhost:9091/ApplicationServices.svc"
+      "http://156.35.98.159:9090/DataServices.svc"
     ],
     "collectionTypes": [
       "System.Array",
       "System.Collections.Generic.Dictionary`2"
     ],
     "namespaceMappings": [
-      "*, AppAsturiasServices"
+      "*, DataServices"
     ],
     "references": [
       "Microsoft.Bcl.AsyncInterfaces, {Microsoft.Bcl.AsyncInterfaces, 5.0.0}",
