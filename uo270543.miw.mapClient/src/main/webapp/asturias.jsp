@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puntos de Carga: Oviedo y Gijón</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="estilos/asturias.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 
 <nav>
     <!-- Agrega tus elementos de navegación aquí -->
-    <a href="#">Inicio</a>
+    <a href="${pageContext.request.contextPath}/">Inicio</a>
     <a href="${pageContext.request.contextPath}/oviedo">Oviedo</a>
     <a href="${pageContext.request.contextPath}/gijon">Gijón</a>
 </nav>
