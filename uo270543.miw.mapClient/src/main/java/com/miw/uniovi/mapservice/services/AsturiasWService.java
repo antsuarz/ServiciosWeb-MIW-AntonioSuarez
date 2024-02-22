@@ -9,7 +9,7 @@ import com.miw.uniovi.mapservice.converter.AsturiasConverter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AsturiasWsService {
+public class AsturiasWService {
     public static List<ClientCargadorModel> getCargadores(){
         List<CargadorModel> modelList = conectionService();
         List<ClientCargadorModel> result = new ArrayList<>();

@@ -19,8 +19,9 @@
 
 <nav>
   <a href="${pageContext.request.contextPath}/">Inicio</a>
-  <a href="${pageContext.request.contextPath}/asturias">Asturias</a>
   <a href="${pageContext.request.contextPath}/oviedo">Oviedo</a>
+  <a href="${pageContext.request.contextPath}/asturias">Asturias</a>
+
 </nav>
 
 <div id="map"></div>

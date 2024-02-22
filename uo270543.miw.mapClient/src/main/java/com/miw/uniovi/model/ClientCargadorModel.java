@@ -10,12 +10,23 @@ public class ClientCargadorModel {
 
     public String tipo;
 
+    public String provincia;
+
 
     public ClientCargadorModel(String title, double corX, double corY, String tipo) {
         this.title = title;
         this.corX = corX;
         this.corY = corY;
         this.tipo = tipo;
+        this.provincia = "Asturias";
+    }
+
+    public ClientCargadorModel(String title, double corX, double corY, String tipo, String provincia) {
+        this.title = title;
+        this.corX = corX;
+        this.corY = corY;
+        this.tipo = tipo;
+        this.provincia = provincia;
     }
     public String getTitle() {
         return title;
@@ -47,5 +58,13 @@ public class ClientCargadorModel {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
     }
 }

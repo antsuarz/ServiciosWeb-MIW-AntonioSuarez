@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static com.miw.uniovi.mapservice.services.AsturiasWsService.getCargadoresGijon;
+import static com.miw.uniovi.mapservice.services.AsturiasWService.getCargadoresGijon;
 
 @WebServlet("/gijon")
 public class GijonServlet extends HttpServlet {

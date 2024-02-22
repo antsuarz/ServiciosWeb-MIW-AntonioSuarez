@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.List;
-import static com.miw.uniovi.mapservice.services.AsturiasWsService.getCargadoresOviedo;
+import static com.miw.uniovi.mapservice.services.AsturiasWService.getCargadoresOviedo;
 
 @WebServlet("/oviedo")
 public class OviedoServlet extends HttpServlet {

@@ -40,7 +40,7 @@
 </header>
 <div>
     <a href="${pageContext.request.contextPath}/asturias" class="button-link">Asturias</a>
-    <a href="pagina2.jsp" class="button-link">Castilla y León</a>
+    <a href="${pageContext.request.contextPath}/cyl" class="button-link">Castilla y León</a>
 </div>
 
 <footer>

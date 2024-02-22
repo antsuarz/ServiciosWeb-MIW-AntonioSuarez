@@ -1,4 +1,4 @@
-package com.miw.uniovi.client.asturias;
+package com.miw.uniovi.client.cyl;
 
 import com.miw.uniovi.mapservice.converter.LeafletConverter;
 import com.miw.uniovi.model.ClientCargadorModel;
@@ -11,14 +11,18 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static com.miw.uniovi.mapservice.services.AsturiasWService.getCargadores;
+import static com.miw.uniovi.mapservice.services.CyLWService.getCargadores;
 
-@WebServlet("/asturias")
-public class AsturiasServlet extends HttpServlet {
+@WebServlet("/cyl/sor")
+public class SoriaServlet extends HttpServlet {
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        List<ClientCargadorModel> cargadores = getCargadores();
+        List<ClientCargadorModel> cargadores = getCargadores("soria");
         request.setAttribute("markers", LeafletConverter.convertToLeafletMarkersJson(cargadores));
-        request.getRequestDispatcher("/asturias.jsp").forward(request, response);
+        request.setAttribute("x",41.773097);
+        request.setAttribute("y",-2.499592);
+        request.setAttribute("distance", 14);
+        request.getRequestDispatcher("/cyl/cyl.jsp").forward(request, response);
     }
 }
